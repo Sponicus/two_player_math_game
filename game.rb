@@ -1,18 +1,28 @@
-class game
-  player.new('player 1')
-  player.new('player 2')
-  #player_turn =  ?????
-  
-  def start_game
-    question.new
+class Game
     
+  def initialize
+    @player1 = Player.new('John')
+    @player2 = Player.new('Sally')
+    @player_turn = @player1
   end
-  
-  def end_game
-  end
-  
-  
-  def determine_winner
     
+  def play_game
+    #loop through until someone loses.
+    while @player_turn.lives > 0 do
+      #ask a question to a player
+      Question.new.ask_question(@player_turn)
+      #check if game ends
+      if @player_turn.lives == 0
+        puts "#{@player_turn} loses the game!"
+        return
+      end
+      #change who's turn it is
+      if @player_turn == @player_turn
+        @player_turn = @player2
+      else
+        @player_turn = @player1
+      end
+    end    
   end
+  
 end
