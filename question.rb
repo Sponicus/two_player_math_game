@@ -13,7 +13,7 @@ class question
   end
   
   def incorrect
-    #player.lives -= 1
+    #lose_life
   end
   
   
