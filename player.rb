@@ -1,0 +1,2 @@
+class player
+end
