@@ -1,11 +1,11 @@
 # Player
 
 TO BE INITIALIZED:
- -name
- -lives
+ - name
+ - lives
  
 ### METHODS:
-  -lose_life
+  - lose_life
 
 # Question
 - The question class will calculate and generate the math questions and answers.
