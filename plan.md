@@ -42,5 +42,5 @@ TO BE INITIALIZED:
     -determine winner
   - end
     -check if player is out of lives
-  - determin_winner
+  - determine_winner
   
