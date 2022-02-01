@@ -10,11 +10,14 @@ class Question
   end
   
   def ask_question(player)
-    puts "What is #{num1} + #{num2} ?"
+    puts "#{player.name}: What is #{num1} + #{num2} ?"
     puts @answer
     reply = gets.chomp.to_i
     if reply != @answer
       incorrect(player)
+      puts 'Incorrect!'
+    else
+      puts 'Correct!'
     end
     
   end
