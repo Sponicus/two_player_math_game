@@ -13,11 +13,14 @@ class Game
       Question.new.ask_question(@player_turn)
       #check if game ends
       if @player_turn.lives == 0
-        puts "#{@player_turn} loses the game!"
+        puts "#{@player_turn.name} loses the game!"
         return
       end
+      
+      puts " Player 2#{@player_turn.name == @player1.name}"
+      
       #change who's turn it is
-      if @player_turn == @player_turn
+      if @player_turn.name == @player1.name
         @player_turn = @player2
       else
         @player_turn = @player1

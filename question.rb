@@ -1,3 +1,4 @@
+require './player.rb'
 class Question
   
   attr_reader :num1, :num2, :answer
@@ -10,8 +11,9 @@ class Question
   
   def ask_question(player)
     puts "What is #{num1} + #{num2} ?"
-    
-    if gets.chomp != answer
+    puts @answer
+    reply = gets.chomp.to_i
+    if reply != @answer
       incorrect(player)
     end
     
