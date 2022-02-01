@@ -1,13 +1,13 @@
-## Player
+# Player
 
 TO BE INITIALIZED:
  -name
  -lives
  
-# METHODS:
+### METHODS:
   -lose_life
 
-## Question
+# Question
 - The question class will calculate and generate the math questions and answers.
 
 TO BE INITIALIZED:
@@ -17,7 +17,7 @@ TO BE INITIALIZED:
   
 
 
-# METHODS:
+### METHODS:
 - ask_question(player)
   - display question to user
   - User input for answer
@@ -26,14 +26,14 @@ TO BE INITIALIZED:
   - if input != answer, call lose_life && display incorrect
   
 
-## Game
+# Game
 - The winner class will take input from the answers to the questions to determine which of the two players scored the most points and who is the winner.
 
 TO BE INITIALIZED:
   - player 1
   - player 2
   
-# METHODS:
+### METHODS:
   - start
     -initialize question
     -ask question to starting player
